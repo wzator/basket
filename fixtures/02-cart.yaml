@@ -1,0 +1,16 @@
+App\Entity\cart:
+
+   cart_1:
+     products:
+        - '@products_1'
+
+   cart_2:
+     products:
+        - '@products_1'
+        - '@products_2'
+
+   cart_3:
+      products:
+        - '@products_1'
+        - '@products_2'
+        - '@products_3'

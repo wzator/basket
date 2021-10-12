@@ -1,0 +1,4 @@
+App\Entity\products:
+   products_{1..6}:
+        name: <sentence(4)>
+        price: <numberBetween(0, 100)>

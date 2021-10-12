@@ -8,6 +8,7 @@ use Symfony\Component\Validator\Constraints as Assert;
 use ApiPlatform\Core\Annotation\ApiResource;
 use JMS\Serializer\Annotation as Serializer;
 use Symfony\Component\Serializer\Annotation\Groups;
+use \Doctrine\ORM\PersistentCollection;
 
 /**
  * @Serializer\ExclusionPolicy("all")
@@ -53,7 +54,6 @@ class cart
      */
     public float $total = 0;
 
- 
     /******** METHODS ********/
 
     /**
@@ -78,7 +78,7 @@ class cart
      * )
      * @Assert\Valid()
      */
-    public function getProducts(): \Doctrine\ORM\PersistentCollection
+    public function getProducts()
     {
         return $this->products;
     }

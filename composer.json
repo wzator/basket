@@ -78,5 +78,8 @@
             "allow-contrib": false,
             "require": "5.3.*"
         }
+    },
+    "require-dev": {
+        "hautelook/alice-bundle": "^2.9"
     }
 }
